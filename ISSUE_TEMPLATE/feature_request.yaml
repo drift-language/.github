@@ -1,0 +1,30 @@
+name: Feature Request
+about: Add a new feature request to board
+title: "[FEAT] "
+labels: [enhancement]
+assignees: ""
+body:
+  - type: textarea
+    id: desc
+    attributes:
+      label: "Description"
+      description: "Let's describe the feature to implement"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: reproduce
+    attributes:
+      label: "Is it a sub-feature?"
+      description: ""
+      options: 
+        - label: "Lexer"
+        - label: "Parser"
+        - label: "Runtime"
+        - label: "Native Types"
+        - label: "Conditional Handling"
+        - label: "Iteration Handling"
+        - label: "Classes"
+        - label: "Interfaces"
+        - label: "Prefabs"
+        - label: "Security"
