@@ -1,0 +1,134 @@
+name: Bug Report
+about: Report a bug in the Drift programming language
+title: "[BUG] "
+labels: [bug]
+assignees: ""
+body:
+  - type: input
+    id: drift_version
+    attributes:
+      label: "Drift Version"
+      description: "What version of Drift are you using?"
+      placeholder: "e.g., v1.0.0"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Bug Description"
+      description: "A clear and concise description of what the bug is."
+      placeholder: "Describe the bug..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps_to_reproduce
+    attributes:
+      label: "Steps to Reproduce"
+      description: "Steps to reproduce the behavior"
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Run command '...'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: "Expected Behavior"
+      description: "What you expected to happen."
+      placeholder: "What should have happened?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual_behavior
+    attributes:
+      label: "Actual Behavior"
+      description: "What actually happened."
+      placeholder: "What actually happened?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: code_sample
+    attributes:
+      label: "Code Sample"
+      description: "If applicable, add a minimal code sample."
+      render: kotlin
+      placeholder: |
+        // Your Drift code here
+        fn main() {
+            // code that causes the bug
+        }
+
+  - type: textarea
+    id: error_output
+    attributes:
+      label: "Error Output"
+      description: "If there's an error message or stack trace, please include it here."
+      render: shell
+      placeholder: "Paste error messages or stack traces here"
+
+  - type: input
+    id: os
+    attributes:
+      label: "Operating System"
+      description: "What operating system are you using?"
+      placeholder: "e.g., Windows 11, macOS 13.2, Ubuntu 22.04"
+    validations:
+      required: true
+
+  - type: input
+    id: java_version
+    attributes:
+      label: "Java/JVM Version"
+      description: "What version of Java/JVM are you using?"
+      placeholder: "e.g., OpenJDK 11.0.18, Oracle Java 17.0.6"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: component
+    attributes:
+      label: "Component"
+      description: "Which component(s) of Drift are affected?"
+      options:
+        - label: "Lexer"
+        - label: "Parser"
+        - label: "Runtime"
+        - label: "Native Types"
+        - label: "Conditional Handling"
+        - label: "Iteration Handling"
+        - label: "Classes"
+        - label: "Interfaces"
+        - label: "Prefabs"
+        - label: "Security"
+        - label: "Compiler"
+        - label: "Standard Library"
+        - label: "Documentation"
+        - label: "Build System"
+        - label: "Other"
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: "Additional Context"
+      description: "Additional context about the problem."
+      placeholder: "Any additional information that might be helpful..."
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "Checklist"
+      description: "Please confirm the following:"
+      options:
+        - label: "I have searched for existing issues that describe the same problem"
+          required: true
+        - label: "I have provided all the required information above"
+          required: true
+        - label: "I can reproduce this issue consistently"
+          required: true
