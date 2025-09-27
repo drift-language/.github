@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Discussion Forum
+    url: https://github.com/orgs/drift-language/discussions
+    about: For general questions, ideas, and community discussions about the Drift Language
+  - name: Documentation
+    url: https://github.com/drift-language
+    about: Visit our organization page for documentation and project information
